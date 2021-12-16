@@ -17,5 +17,5 @@ You have to return 3 columns: id, hours and liters (not litres, it's a differenc
 
 sol:
 *************************************
-SELECT id , hours, ROUND(0.5 * hours) AS liters 
+SELECT id , hours, TRUNC(0.5 * hours) AS liters 
         FROM cycling
